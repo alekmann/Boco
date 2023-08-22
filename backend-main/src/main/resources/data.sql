@@ -1,0 +1,10 @@
+MERGE INTO category KEY(id) VALUES(1, 'screwdriver-wrench', 'Verktøy');
+MERGE INTO category KEY(id) VALUES(2, 'industry', 'Industri');
+MERGE INTO category KEY(id) VALUES(3, 'charging-station', 'Elektronikk');
+MERGE INTO category KEY(id) VALUES(4, 'truck-field', 'Kjøretøy');
+MERGE INTO category KEY(id) VALUES(5, 'camera-retro', 'Film og medie');
+MERGE INTO category KEY(id) VALUES(6, 'kitchen-set', 'Husholdning');
+MERGE INTO category KEY(id) VALUES(7, 'desktop', 'Datateknologi');
+MERGE INTO category KEY(id) VALUES(8, 'user-clock', 'Tjenester');
+MERGE INTO category KEY(id) VALUES(9, 'couch', 'Møbler');
+MERGE INTO category KEY(id) VALUES(10, 'house-flood-water','Bolig');

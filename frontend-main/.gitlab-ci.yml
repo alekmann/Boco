@@ -1,0 +1,32 @@
+image: node:14.15.4
+
+stages:
+  - test
+  - build
+
+cache:
+  paths:
+    - node_modules/
+  key: "$CI_BUILD_REF_NAME"
+
+test_front:
+  stage: test
+  script:
+    - npm install --progress=false
+    - npm run test:unit
+
+  artifacts:
+    paths:
+      - node_modules/
+
+build_front:
+  stage: build
+  needs: ["test_front"]
+  script:
+    - npm install --progress=false
+    - npm run build
+  artifacts:
+    paths:
+      - dist/
+  only:
+    - main
